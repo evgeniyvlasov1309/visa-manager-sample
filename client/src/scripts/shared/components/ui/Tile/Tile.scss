@@ -1,0 +1,63 @@
+@import "@styles/variables.scss";
+
+.tile {
+    padding: 8px;
+    text-align: center;
+    margin: -8px;
+    font-weight: 600;
+    border-radius: 3px;
+
+    &--success {
+        color: $teal;
+        background: linear-gradient(
+            198.01deg,
+            rgba(0, 191, 87, 0.05) 0.44%,
+            rgba(0, 95, 145, 0.05) 108.3%
+        );
+    }
+
+    &--progress {
+        color: rgba(84, 150, 251, 0.9);
+        background: linear-gradient(
+            198.01deg,
+            rgba(84, 150, 251, 0.05) 0.44%,
+            rgba(7, 49, 112, 0.042) 108.3%
+        );
+    }
+
+    &--pending {
+        color: #ffcc02f1;
+        background: linear-gradient(
+            198.01deg,
+            rgba(252, 226, 0, 0.05) 0.44%,
+            rgba(255, 124, 2, 0.05) 108.3%
+        );
+    }
+
+    &--error {
+        color: #bf2e00;
+        background: linear-gradient(
+            198.01deg,
+            rgba(191, 46, 0, 0.05) 0.44%,
+            rgba(249, 43, 175, 0.042) 108.3%
+        );
+    }
+
+    &--canceled {
+        color: #bf2e00;
+        background: linear-gradient(
+            198.01deg,
+            rgba(191, 46, 0, 0.05) 0.44%,
+            rgba(249, 43, 175, 0.042) 108.3%
+        );
+    }
+
+    &--info {
+        color: rgba(84, 150, 251, 0.9);
+        background: linear-gradient(
+            198.01deg,
+            rgba(84, 150, 251, 0.05) 0.44%,
+            rgba(7, 49, 112, 0.042) 108.3%
+        );
+    }
+}

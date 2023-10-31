@@ -1,0 +1,139 @@
+@import "@styles/variables.scss";
+
+.header {
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__profile {
+        display: flex;
+        align-items: center;
+    }
+
+    &__profile-icon {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 37px;
+        height: 37px;
+        margin-left: 17px;
+        background: linear-gradient(
+            177.75deg,
+            #134e5e -5.2%,
+            #15505f 0.37%,
+            #17525f 5.37%,
+            #1a5560 9.99%,
+            #1d5861 14.46%,
+            #205c63 18.98%,
+            #246064 23.76%,
+            #286566 29.02%,
+            #2e6b68 34.96%,
+            #34716a 41.8%,
+            #3b796d 49.75%,
+            #448270 59.02%,
+            #4d8c73 69.81%,
+            #589777 82.35%,
+            #64a47b 96.84%,
+            #71b280 113.49%
+        );
+        box-shadow: 0px 4px 30px rgba(16, 56, 2, 0.09);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__profile-icon img {
+        object-fit: cover;
+    }
+
+    &__status {
+        margin: 0 10px;
+    }
+
+    &__payment {
+        display: flex;
+    }
+
+    &__payment-total {
+        display: flex;
+        align-items: center;
+    }
+
+    &__records-status {
+        margin-right: 20px;
+    }
+
+    &__payment-btn {
+        margin: 0 20px;
+    }
+
+    &__search-input {
+        flex-grow: 1;
+
+        .text-field__input {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background: #f6f7f9;
+            border-radius: 8px;
+        }
+
+        .text-field__input-container {
+            margin: 0;
+        }
+    }
+
+    &__profile-dropdown {
+        margin-left: auto;
+    }
+
+    &__payment-toggle {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+}
+
+.tile-animation-enter {
+    transform: scale(1);
+}
+
+.tile-animation-enter-active {
+    transform: scale(1.2);
+    transition: transform 100ms;
+}
+
+.tile-animation-exit {
+    transform: scale(1);
+}
+
+.tile-animation-exit-active {
+    transform: scale(1);
+    transition: transform 100ms;
+}
+
+.payment-toggle.react-toggle--checked .react-toggle-track {
+    background-color: $teal !important;
+}
+
+.header__payment-method {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.payment-modal {
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    &__code {
+        font-size: 20px;
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true, // ESLint auto format on save
+        "source.organizeImports": true
+    },
+    "editor.formatOnSave": true, // Prettier auto format on save
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+}

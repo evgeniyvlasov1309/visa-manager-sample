@@ -1,0 +1,102 @@
+.filter {
+    margin-bottom: 30px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 45px;
+}
+
+.record-form {
+    .react-datepicker-wrapper {
+        width: 100%;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        color: #263238;
+    }
+
+    &__section {
+        margin-bottom: 28px;
+        position: relative;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-remove {
+            position: absolute;
+            top: 40px;
+            right: 25px;
+            cursor: pointer;
+        }
+    }
+
+    &__common-fields {
+        &-top {
+            display: grid;
+            gap: 0 15px;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: flex-end;
+        }
+
+        &-bottom {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
+
+            // .select {
+            //     grid-column: span 2;
+            // }
+        }
+    }
+
+    &__applicant-fields {
+        display: grid;
+        gap: 0 15px;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: flex-end;
+        // .select,
+        // .text-field {
+        //     grid-column: span 2;
+        // }
+    }
+
+    &__country-filter {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 28px;
+    }
+}
+
+.tooltip-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 19px;
+
+    img {
+        margin-left: 10px;
+    }
+}
+
+.individual-records-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.individual-records-label {
+    margin-left: 10px;
+}
+
+.city-checkboxes {
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}

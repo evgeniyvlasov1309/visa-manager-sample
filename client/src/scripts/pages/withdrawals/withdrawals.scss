@@ -1,0 +1,61 @@
+.payment-block {
+    display: flex;
+    align-items: center;
+
+    &__amount {
+        width: 150px;
+        font-weight: bold;
+        margin-left: 100px;
+        margin-right: 20px;
+    }
+}
+
+.table-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error-tooltip-link {
+    display: block;
+}
+
+.withdrawals-detail {
+    p {
+        margin: 10px 0;
+    }
+
+    &__label {
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    &__records {
+        margin: 10px 0 20px 0;
+        border-bottom: 1px solid rgba(41, 40, 40, 0.8);
+        padding-bottom: 20px;
+    }
+
+    &__record {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0;
+    }
+
+    &__status-row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__controls {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.withdrawal-detail {
+    &__info-item {
+        margin: 10px 0;
+    }
+}

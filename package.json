@@ -1,0 +1,24 @@
+{
+  "name": "visa-manager-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "docker-compose up --build",
+    "prod": "docker-compose -f docker-compose.prod.yml up -d --build",
+    "stop": "docker-compose stop"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/evgeniyvlasov1309/visa-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/evgeniyvlasov1309/visa-manager/issues"
+  },
+  "homepage": "https://github.com/evgeniyvlasov1309/visa-manager#readme",
+  "dependencies": {},
+  "devDependencies": {}
+}

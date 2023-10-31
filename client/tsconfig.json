@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "target": "ESNext",
+        "module": "umd",
+        "lib": ["ESNext", "dom"],
+        "jsx": "react",
+        "noEmit": true,
+        "sourceMap": true,
+        /* Strict Type-Checking Options */
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+
+        /* Module Resolution Options */
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true,
+        "paths": {
+            "@shared/*": ["src/scripts/shared/*"],
+            "@pages/*": ["src/scripts/pages/*"],
+            "@scripts/*": ["src/scripts/*"],
+            "@assets/*": ["src/assets/*"],
+            "@styles/*": ["src/styles/*"]
+        }
+    },
+    "include": ["src", "global.d.ts"]
+}

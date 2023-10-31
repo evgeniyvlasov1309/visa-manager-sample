@@ -1,0 +1,26 @@
+.payment-block {
+    display: flex;
+    align-items: center;
+
+    &__amount {
+        width: 150px;
+        font-weight: bold;
+        margin-left: 100px;
+        margin-right: 20px;
+    }
+}
+
+.table-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.error-tooltip-link {
+    display: block;
+}
+
+.country-column {
+    display: flex;
+    align-items: center;
+}

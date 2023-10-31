@@ -1,0 +1,29 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
+        "react-app",
+        "prettier"
+    ],
+    "plugins": ["autofix", "react-hooks"],
+    "rules": {
+        "arrow-body-style": ["error", "as-needed"],
+        "react/self-closing-comp": [
+            "error",
+            { "component": true, "html": true }
+        ],
+        "@typescript-eslint/consistent-type-imports": [
+            "error",
+            {
+                "prefer": "type-imports"
+            }
+        ],
+        "no-restricted-imports": [
+            "error",
+            {
+                "patterns": ["../"]
+            }
+        ],
+        "react-hooks/exhaustive-deps": "off"
+    }
+}

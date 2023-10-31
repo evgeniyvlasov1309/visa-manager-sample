@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Новая оплата в кассу</h1>
+    <ul>
+      <li>
+        <strong>Номер заявки:</strong>
+        <%= data.number %>
+      </li>
+      <li>
+        <strong>Код оплаты:</strong>
+        <%= data.code %>
+      </li>
+      <li>
+        <strong>Сумма:</strong>
+        <%= data.amount %>
+      </li>
+      <% if (data.comment) { %>
+      <li>
+        <strong>Комментарий:</strong>
+        <%= data.comment %>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

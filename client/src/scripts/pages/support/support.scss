@@ -1,0 +1,29 @@
+.support-form {
+    &__content {
+        width: 90%;
+    }
+
+    &__fields {
+        display: grid;
+        grid-template-columns: 3fr 4fr;
+        column-gap: 20px;
+    }
+
+    &__subtitle {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 20px;
+        color: #263238;
+    }
+
+    &__feedback-info {
+        display: grid;
+        grid-template-columns: auto 37px 37px;
+        column-gap: 30px;
+        align-items: center;
+        font-size: 14px;
+        line-height: 19px;
+        margin-right: 30px;
+    }
+}

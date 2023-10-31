@@ -1,0 +1,30 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: $black;
+}
+
+.h1 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 48px;
+    color: $black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.page-title {
+    font-size: 23px;
+    font-weight: 600;
+    color: $black;
+}
+
+.p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: rgba($black, 0.9);
+    margin: 0;
+}

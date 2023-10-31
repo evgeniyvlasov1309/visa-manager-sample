@@ -1,0 +1,53 @@
+@import "@styles/variables.scss";
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+
+    &__label {
+        position: relative;
+        padding-right: 21px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        transition: transform 0.1s ease;
+    }
+
+    &.opened &__icon {
+        transform: translateY(-50%) rotate(180deg);
+    }
+
+    &__list {
+        z-index: 2;
+        position: absolute;
+        top: calc(100% + 5px);
+        min-width: 100%;
+        background-color: $snow-white;
+        border: 1px solid $light-gray;
+        border-radius: 8px;
+        max-height: 300px;
+        overflow: auto;
+    }
+
+    &__item {
+        padding: 10px;
+
+        &:not(:last-child) {
+            border-bottom: 1px solid $light-gray;
+        }
+    }
+
+    &__search {
+        .text-field__input-container {
+            margin: 0;
+        }
+
+        .text-field__input {
+            padding: 10px;
+        }
+    }
+}

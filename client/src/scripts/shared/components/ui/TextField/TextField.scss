@@ -1,0 +1,91 @@
+@import "@styles/variables.scss";
+
+.text-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: rgba($black, 0.8);
+
+    &__input-container {
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        font-size: 14px;
+        line-height: 19px;
+        width: 100%;
+        font-weight: 300;
+        padding: 10px;
+        color: $black;
+        border: 1px solid rgba($black, 0.3);
+        border-radius: 8px;
+        outline: none;
+
+        &::placeholder {
+            color: rgba($black, 0.6);
+        }
+
+        &:focus {
+            color: $black;
+            border-color: $black;
+        }
+
+        &:disabled {
+            background-color: hsla(0, 0%, 83%, 0.4);
+        }
+    }
+
+    &.uppercase {
+        input {
+            text-transform: uppercase;
+
+            &::placeholder {
+                text-transform: none;
+            }
+        }
+    }
+
+    &.hidden {
+        display: none;
+    }
+
+    .icon &__input {
+        padding-left: 40px;
+    }
+
+    &.flat &__input-container {
+        margin: 0;
+    }
+
+    &__label {
+        flex-grow: 1;
+    }
+
+    &__icon {
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        bottom: 50%;
+        transform: translateY(50%);
+        left: 17px;
+    }
+
+    &.error {
+        color: rgba($red, 0.8);
+    }
+
+    &.error &__input {
+        border-color: $red;
+    }
+
+    &__error {
+        position: absolute;
+        top: calc(100% - 15px);
+        left: 16px;
+        font-size: 12px;
+        color: $red;
+        line-height: 12px;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Заявка на вывод средств</h1>
+    <ul>
+      <li>
+        <strong>ID заявки:</strong>
+        <%= data.id %>
+      </li>
+      <li>
+        <strong>Разработчик:</strong>
+        <%= data.email %>
+      </li>
+      <li>
+        <strong>Сумма:</strong>
+        <%= data.amount %>
+      </li>
+      <li>
+        <strong>Статус:</strong>
+        <%= data.status %>
+      </li>
+      <li>
+        <strong>Дата создания:</strong>
+        <%= data.createdAt %>
+      </li>
+      <% if (data.comment) { %>
+      <li>
+        <strong>Комментарий:</strong>
+        <%= data.comment %>
+      </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

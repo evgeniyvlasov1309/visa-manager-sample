@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "normalize.css";
+@import "variables.scss";
+@import "./components/link.scss";
+@import "typography.scss";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    height: 100vh;
+    background-color: $white;
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__total {
+        white-space: nowrap;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+:root {
+    iframe#webpack-dev-server-client-overlay {
+        display: none !important;
+    }
+}

@@ -1,0 +1,13 @@
+.edit-number-input {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+
+    &__controls {
+        display: flex;
+    }
+
+    &__icon {
+        margin: 0 5px;
+    }
+}

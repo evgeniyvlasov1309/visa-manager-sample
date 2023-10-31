@@ -1,0 +1,39 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: ["master"]
+  pull_request:
+    branches: ["master"]
+
+env:
+  SERVER_HOST: 185.228.234.77
+  SERVER_USER: root
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.13]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Deployment
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          key: "${{ secrets.SSH_PRIVATE_KEY }}"
+          host: ${{ env.SERVER_HOST }}
+          username: ${{ env.SERVER_USER }}
+          fingerprint: "${{ secrets.FINGERPRINT }}"
+          script: |
+            cd visa-manager
+            git pull
+            npm run stop
+            npm run prod

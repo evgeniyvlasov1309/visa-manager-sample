@@ -1,0 +1,53 @@
+@import "@styles/variables.scss";
+
+.country-chip {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    background: rgba($snow-white, 0.3);
+    padding: 6px 13px;
+    border: 2px solid transparent;
+    box-shadow: 2px 2px 16px rgba(117, 117, 117, 0.04);
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+
+    &__image {
+        width: 26px;
+        height: 20px;
+        margin-right: 10px;
+        border-radius: 3px;
+    }
+
+    &.active {
+        border-color: $teal;
+    }
+
+    &.all {
+        padding: 8px 15px;
+        border: none;
+    }
+
+    &.active.all {
+        color: $snow-white;
+        background: linear-gradient(
+            177.75deg,
+            #134e5e -5.2%,
+            #144f5e 5%,
+            #15505f 15.54%,
+            #185360 26.29%,
+            #1b5661 37.07%,
+            #1f5b62 47.73%,
+            #246064 58.11%,
+            #2a6766 68.07%,
+            #316e69 77.44%,
+            #38766c 86.07%,
+            #407e6e 93.8%,
+            #498872 100.47%,
+            #529175 105.93%,
+            #5c9c78 110.03%,
+            #66a77c 112.6%,
+            #71b280 113.49%
+        );
+    }
+}

@@ -1,0 +1,2 @@
+export const userPricesDefault =
+  '[{"label":"Франция","value":"Fr","priceStandardCapital":0,"priceStandardRegion":0,"capitals":["2002","2003"]},{"label":"Испания","value":"Sp","priceStandardCapital":0,"priceStandardRegion":0,"capitals":["7#2","6#1"]},{"label":"Китай","value":"Ch","priceStandardCapital":0,"priceStandardRegion":0,"capitals":["Москва","Санкт-Петербург","Хабаровск"]},{"label":"США","value":"Usa","priceStandardCapital":0,"priceStandardRegion":0,"capitals":[]}]';
